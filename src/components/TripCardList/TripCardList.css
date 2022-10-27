@@ -1,0 +1,19 @@
+.tripCardList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 26px 17px;
+  transition: 0.2s all ease-out;
+}
+
+
+@media screen and (min-width: 600px) {
+  .tripCardList {
+    padding: 67px 17px;
+    transition: 0.2s all ease-out;
+  }
+}
