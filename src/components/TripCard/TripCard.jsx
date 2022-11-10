@@ -14,7 +14,6 @@ export default function TripCard({
   offlinePrice,
 }) {
   const [timeItemsToShow, setTimeItemsToShow] = useState([]);
-  let arrayForHoldingTimeItems = [];
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 600px)").matches
   );
@@ -108,6 +107,7 @@ export default function TripCard({
 
   const loopWithSlice = (start, end) => {
     const slicedItems = tripTimeArr.slice(start, end);
+    let arrayForHoldingTimeItems;
     if (
       timeItemsToShow[1] === slicedItems[1] ||
       timeItemsToShow.length !== tripTimeArr.length
